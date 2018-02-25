@@ -14,7 +14,7 @@
         <!--Search View Controller-->
         <scene sceneID="tfi-xc-pdq">
             <objects>
-                <viewController id="YMq-2n-ga6" customClass="SearchViewController" customModule="LegalEagleAI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="searchVC" id="YMq-2n-ga6" customClass="SearchViewController" customModule="LegalEagleAI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UL4-Av-CDa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,7 +52,8 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="2rS-Lk-fCc" kind="show" id="Yt0-7k-XPD"/>
+                                            <action selector="searchAction:" destination="YMq-2n-ga6" eventType="touchUpInside" id="rKk-HC-2F7"/>
+                                            <segue destination="2rS-Lk-fCc" kind="show" identifier="searchToResultsSegue" id="Yt0-7k-XPD"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -92,6 +93,7 @@
                     <navigationItem key="navigationItem" id="rvU-e5-60e"/>
                     <connections>
                         <outlet property="navBar" destination="rvU-e5-60e" id="07K-SU-iqj"/>
+                        <outlet property="searchTextView" destination="1qj-7U-hxL" id="SuM-KR-hPc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yAP-XZ-tCg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -101,7 +103,7 @@
         <!--Results View Controller-->
         <scene sceneID="JFa-jk-N1k">
             <objects>
-                <viewController id="2rS-Lk-fCc" customClass="ResultsViewController" customModule="LegalEagleAI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="resultsVC" id="2rS-Lk-fCc" customClass="ResultsViewController" customModule="LegalEagleAI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fWC-Cd-YuY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -144,6 +146,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="isD-qM-isC"/>
                     </view>
+                    <connections>
+                        <outlet property="resultsHeading" destination="Bk6-cG-D4C" id="XIo-aL-jZr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Nq-07-7Gr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

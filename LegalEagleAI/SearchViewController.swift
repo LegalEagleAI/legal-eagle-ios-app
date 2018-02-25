@@ -8,9 +8,29 @@
 
 import UIKit
 
-class SearchViewController: UIViewController {
+protocol resultsProtocolDelegate {
+    func getSearchQuery(searchString: String)
+}
 
+class SearchViewController: UIViewController {
+    
+    var delegate: resultsProtocolDelegate?
+
+    @IBOutlet weak var searchTextView: UITextView!
     @IBOutlet weak var navBar: UINavigationItem!
+    
+    @IBAction func searchAction(_ sender: Any) {
+        print("Delegate may be nil")
+        if delegate != nil {
+            if searchTextView.text != nil {
+                print("delegate is not nil")
+                let searchString = searchTextView.text
+                    print(searchTextView.text)
+                delegate?.getSearchQuery(searchString: searchString!)
+            }
+        }
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = true
         UIApplication.shared.statusBarStyle = .default
@@ -25,16 +45,10 @@ class SearchViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "searchToResultsSegue" {
+            delegate = self as! resultsProtocolDelegate
+        }
     }
-    */
-
 }
