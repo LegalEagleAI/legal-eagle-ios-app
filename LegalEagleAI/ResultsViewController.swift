@@ -12,6 +12,8 @@ class ResultsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.isNavigationBarHidden = false
+
         UIApplication.shared.statusBarStyle = .lightContent
 
         // Do any additional setup after loading the view.

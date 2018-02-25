@@ -10,10 +10,14 @@ import UIKit
 
 class SearchViewController: UIViewController {
 
+    @IBOutlet weak var navBar: UINavigationItem!
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = true
+        UIApplication.shared.statusBarStyle = .default
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        UIApplication.shared.statusBarStyle = .default
-
         // Do any additional setup after loading the view.
     }
 
