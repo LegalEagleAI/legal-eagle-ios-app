@@ -15,6 +15,8 @@
 		2801EC782041385300E68903 /* LegalEagleAITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2801EC772041385300E68903 /* LegalEagleAITests.swift */; };
 		2801EC832041385300E68903 /* LegalEagleAIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2801EC822041385300E68903 /* LegalEagleAIUITests.swift */; };
 		2801EC9120413D8400E68903 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2801EC9020413D8400E68903 /* HomepageViewController.swift */; };
+		28D26744204240A900CFCBAE /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D26743204240A900CFCBAE /* SearchViewController.swift */; };
+		28D26746204240B700CFCBAE /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D26745204240B700CFCBAE /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		2801EC822041385300E68903 /* LegalEagleAIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalEagleAIUITests.swift; sourceTree = "<group>"; };
 		2801EC842041385300E68903 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2801EC9020413D8400E68903 /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
+		28D26743204240A900CFCBAE /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		28D26745204240B700CFCBAE /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				2801EC642041385300E68903 /* ViewController.swift */,
 				2801EC662041385300E68903 /* Main.storyboard */,
 				2801EC9020413D8400E68903 /* HomepageViewController.swift */,
+				28D26743204240A900CFCBAE /* SearchViewController.swift */,
+				28D26745204240B700CFCBAE /* ResultsViewController.swift */,
 				2801EC692041385300E68903 /* Assets.xcassets */,
 				2801EC6B2041385300E68903 /* LaunchScreen.storyboard */,
 				2801EC6E2041385300E68903 /* Info.plist */,
@@ -264,6 +270,8 @@
 			files = (
 				2801EC652041385300E68903 /* ViewController.swift in Sources */,
 				2801EC632041385300E68903 /* AppDelegate.swift in Sources */,
+				28D26744204240A900CFCBAE /* SearchViewController.swift in Sources */,
+				28D26746204240B700CFCBAE /* ResultsViewController.swift in Sources */,
 				2801EC9120413D8400E68903 /* HomepageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

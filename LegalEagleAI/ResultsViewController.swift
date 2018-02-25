@@ -1,24 +1,20 @@
 //
-//  HomepageViewController.swift
+//  ResultsViewController.swift
 //  LegalEagleAI
 //
-//  Created by Sophia Huynh on 24/2/18.
+//  Created by Sophia Huynh on 25/2/18.
 //  Copyright © 2018 Sophia Huynh. All rights reserved.
 //
 
 import UIKit
 
-class HomepageViewController: UIViewController {
+class ResultsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        configView()
+        UIApplication.shared.statusBarStyle = .lightContent
+
         // Do any additional setup after loading the view.
-    }
-    
-    func configView() {
-        self.navigationController?.isNavigationBarHidden = true
-        UIApplication.shared.statusBarStyle = .default
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,7 +22,7 @@ class HomepageViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+
     /*
     // MARK: - Navigation
 
